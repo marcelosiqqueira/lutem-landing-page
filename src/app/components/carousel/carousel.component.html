@@ -1,0 +1,23 @@
+<div class="carousel-container">
+    <div class="title-container">
+        <span>
+            Descubra o esporte e venha conhecer!
+            <br>
+            Liga Uberabense de Tênis de mesa
+        </span>
+    </div>
+    
+    <div class="images-carousel-container">
+        <ngx-slick-carousel class="ngx-carousel"
+            #slickModal="slick-carousel" 
+            [config]="slideConfig" 
+            (init)="slickInit($event)">
+            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                <img src="{{ slide.img }}" alt="" width="100%">
+            </div>
+        </ngx-slick-carousel>
+    </div>
+        
+</div>
+
+
