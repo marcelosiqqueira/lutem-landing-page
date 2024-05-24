@@ -8,7 +8,7 @@ import * as $ from 'jquery';
 })
 export class CarouselComponent {
 
-  slideConfig = { "slidesToShow": 1, "slidesToScroll": 1, "dots": true, "infinite": true};
+  slideConfig = { "slidesToShow": 1, "slidesToScroll": 1, "dots": true, "infinite": true, "arrows": false};
   
   slides = [
     {img: "./assets/foto-1-lutem.jpeg"},
