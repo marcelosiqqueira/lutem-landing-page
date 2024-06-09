@@ -1,24 +1,17 @@
 <div class="carousel-container">
-    <div class="title-container">
-        <span>
-            Descubra o esporte e venha conhecer!
-            <br>
-            Liga Uberabense de Tênis de mesa
-        </span>
+
+    <span class="carousel-arrow" (click)="prev()" ><img src="../../../assets/arrow_left.svg" alt=""></span>
+
+    <div *ngFor="let card of displayedCards; let i = index" class="carousel-item">
+
+        <app-carousel-card 
+            [image]="card.image" 
+            [name]="card.name" 
+            [description]="card.description"
+        ></app-carousel-card>
+
     </div>
-    
-    <div class="images-carousel-container">
-        <ngx-slick-carousel class="ngx-carousel"
-            #slickModal="slick-carousel" 
-            [config]="slideConfig" 
-            (init)="slickInit($event)">
-            <div ngxSlickItem *ngFor="let slide of slides" class="slide">
-                <img src="{{ slide.img }}" alt="" width="100%">
-            </div>
-        </ngx-slick-carousel>
-    </div>
-    
-        
+
+    <span class="carousel-arrow" (click)="next()"><img src="../../../assets/arrow_right.svg" alt=""></span>
+
 </div>
-
-

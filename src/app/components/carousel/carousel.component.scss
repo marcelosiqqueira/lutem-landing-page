@@ -1,93 +1,83 @@
-.carousel-container{
-    width: 100%;
-    height: 1000px;
-    
+.title-container {
     display: flex;
-    flex-direction: column;
-    align-self: center;
-
-    .title-container {
-        display: flex;
-        justify-content: center;
-        span {
-            padding: 20px;
-            background-color: #B73139;
-            border-radius: 10px;
-            font-family: 'Bebas Neue', sans-serif;
-            color: aliceblue;
-            font-size: 45px;
-            text-align: center;
-            br {
-                display: none;
-            }
+    justify-content: center;
+    margin-bottom: 20px;
+    span {
+        padding: 20px;
+        background-color: #B73139;
+        border-radius: 10px;
+        font-family: 'Bebas Neue', sans-serif;
+        color: aliceblue;
+        font-size: 45px;
+        text-align: center;
+        br {
+            display: none;
         }
     }
+}
 
-    .images-carousel-container {
-        width: 100%;
+.carousel-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 500px;
+
+    .carousel-arrow {
+        height: 300px;
         display: flex;
-        flex-direction: column;
-        // align-items: center;
-        // justify-content: center;
-
-        .ngx-carousel  {
-            margin-top: 20px;
-            // margin-left: 40px;
-            .slide {
-                // margin: 0 auto;
-                // text-align: center;
-                img {
-                    width: 100%;
-                    height: 600px;
-                    object-fit: contain;
-                }
-            }
-        }
-        
+        align-items: center;
+        cursor: pointer;
     }
 
-    
+    .carousel-arrow img{
+        width: 40px;
+        height: 40px;
+    }    
 } 
 
-
 @media screen and (max-width: 768px) {
-    .carousel-container{
-        width: 100%;
-        height: 1000px;
-        margin: auto;
+
+    .title-container {
+        width: 90%;
+        height: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 25px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         align-items: center;
-
-        .title-container {
-            width: 90%;
+        background-color: #B73139;
+        border-radius: 10px;
+        span {
+            width: 85%;
+            height: 10px;
+            padding: 0px;
+            
+            font-family: "Bebas Neue", sans-serif;
+            color: aliceblue;
+            font-size: 20px;
+            text-align: center;
             display: flex;
-            justify-content: center;
             align-items: center;
-            span {
-                padding: 20px;
-                background-color: #B73139;
-                border-radius: 10px;
-                font-family: 'Bebas Neue', sans-serif;
-                color: aliceblue;
-                font-size: 20px;
-                text-align: center;
+            justify-content: center;
+        }
+    }
 
-            }
-        }
-    
-        .images-carousel-container {
-            width: 95%;
-            .ngx-carousel  {
-                width: 100%;
-                margin-top: 20px;
-                .slide {
-                    img {
-                        width: 100%;
-                        height: 600px;
-                        object-fit: cover;
-                    }
-                }
-            }
-        }
+    .carousel-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        margin-bottom: 400px;
         
-    }    
+        .carousel-arrow img{
+            width: 25px;
+            height: 20px;
+            cursor: pointer;  
+        }
+    } 
 }
