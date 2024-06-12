@@ -1,28 +1,9 @@
-.title-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    span {
-        padding: 20px;
-        background-color: #B73139;
-        border-radius: 10px;
-        font-family: 'Bebas Neue', sans-serif;
-        color: aliceblue;
-        font-size: 45px;
-        text-align: center;
-        br {
-            display: none;
-        }
-    }
-}
-
 .carousel-container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
-    margin-bottom: 500px;
 
     .carousel-arrow {
         height: 300px;
@@ -39,40 +20,12 @@
 
 @media screen and (max-width: 768px) {
 
-    .title-container {
-        width: 90%;
-        height: 100px;
-        margin-left: 10px;
-        margin-right: 10px;
-        gap: 25px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        background-color: #B73139;
-        border-radius: 10px;
-        span {
-            width: 85%;
-            height: 10px;
-            padding: 0px;
-            
-            font-family: "Bebas Neue", sans-serif;
-            color: aliceblue;
-            font-size: 20px;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-
     .carousel-container {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 0px;
-        margin-bottom: 400px;
         
         .carousel-arrow img{
             width: 25px;

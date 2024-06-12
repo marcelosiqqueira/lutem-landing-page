@@ -8,8 +8,10 @@ import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 import { InitialCardComponent } from './components/initial-card/initial-card.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-import { CarouselCardComponent } from './components/carousel-card/carousel-card.component';
-import { CarouselTitleComponent } from './components/carousel-title/carousel-title.component';
+import { CarouselCardComponent } from './components/carousel/carousel-card/carousel-card.component';
+import { CarouselTitleComponent } from './components/carousel/carousel-title/carousel-title.component';
+import { LocalizationComponent } from './components/localization/localization.component';
+import { LocalizationTitleComponent } from './components/localization/localization-title/localization-title.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { CarouselTitleComponent } from './components/carousel-title/carousel-tit
     InitialCardComponent,
     CarouselComponent,
     CarouselCardComponent,
-    CarouselTitleComponent
+    CarouselTitleComponent,
+    LocalizationComponent,
+    LocalizationTitleComponent
   ],
   imports: [
     BrowserModule,

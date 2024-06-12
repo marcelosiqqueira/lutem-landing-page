@@ -3,15 +3,23 @@
     background: linear-gradient(85deg,#66a6ea, #B73139);
     display: flex;
     flex-direction: column;
-    gap: 20px;
     overflow-x: hidden;
+
+    body {
+        display: flex;
+        flex-direction: column;
+        gap: 180px;
+    }
+
 }
+
+
 
 @media screen and (max-width: 768px) {
     .home-container body{
         display: flex;
         flex-direction: column;
         overflow-x: hidden;
-        gap: 10px;
+        gap: 80px;
     }
 }
