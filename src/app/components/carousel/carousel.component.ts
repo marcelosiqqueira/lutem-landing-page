@@ -25,43 +25,81 @@ export class CarouselComponent implements OnInit {
   cards: Card[] = [
     {
       image: 'assets/carousel_images/foto-1-lutem.jpeg',
-      name: 'Sam Walton',
+      name: '1',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
     },
     {
       image: 'assets/carousel_images/foto-2-lutem.jpeg',
-      name: 'Richard Bond',
+      name: '2',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elitt.'
     },
     {
       image: 'assets/carousel_images/foto-3-lutem.jpeg',
-      name: 'Laura Haggis',
+      name: '3',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elittt.'
     },
-
+    {
+      image: 'assets/carousel_images/foto-1-lutem.jpeg',
+      name: '4',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+    },
+    {
+      image: 'assets/carousel_images/foto-2-lutem.jpeg',
+      name: '5',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elitt.'
+    },
+    {
+      image: 'assets/carousel_images/foto-3-lutem.jpeg',
+      name: '6',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elittt.'
+    }
   ];
 
-  updateDisplayedCards() {
-    this.cardsPerSlide = window.innerWidth > 768 ? 3 : 1;
-    this.displayedCards = this.cards.slice(this.activeIndex, this.activeIndex + this.cardsPerSlide);
-    console.log(this.cardsPerSlide);
-    console.log(this.displayedCards);
-  }
-
-  ngOnInit(): void {
-    this.updateDisplayedCards();
-    window.addEventListener('resize', () => this.updateDisplayedCards());
+  updateDisplayedCards(startIndex = 0, endIndex = this.cardsPerSlide) {
+      this.displayedCards = this.cards.slice(startIndex, endIndex);
   }
   
   next() {
-    this.activeIndex = (this.activeIndex + this.cardsPerSlide) % this.cards.length;
-    this.updateDisplayedCards();
+  
+    if( (this.activeIndex + this.cardsPerSlide + 1) > this.cards.length) {
+      
+      this.activeIndex = this.cardsPerSlide - 1;
+      this.updateDisplayedCards(0, this.cardsPerSlide);
+      return;
+    }
+
+    this.activeIndex = (this.activeIndex + 1);
+    this.updateDisplayedCards(this.activeIndex, this.activeIndex + this.cardsPerSlide);
   }
 
   prev() {
-    this.activeIndex = (this.activeIndex - this.cardsPerSlide + this.cards.length) % this.cards.length;
-    this.updateDisplayedCards();
+
+    if( (this.activeIndex - 1) < (  this.cardsPerSlide - 1) )
+    {
+
+      this.activeIndex = (this.cards.length - this.cardsPerSlide);
+      this.updateDisplayedCards(this.activeIndex, this.cards.length);
+      return;
+    }
+
+    this.activeIndex = (this.activeIndex - 1);
+    this.updateDisplayedCards(this.activeIndex - this.cardsPerSlide + 1, this.activeIndex + 1);
   }
 
+  setCardsPerSlide() {
+    this.cardsPerSlide = window.innerWidth > 768 ? 3 : 1;
+  }
+
+  setActiveIndex(index: number) {
+    this.activeIndex = index;
+  }
+
+  ngOnInit(): void {
+    this.setCardsPerSlide();
+    this.setActiveIndex(this.cardsPerSlide - 1);
+    window.addEventListener('resize', () => this.updateDisplayedCards());
+
+    this.updateDisplayedCards();
+  }
 
 }
