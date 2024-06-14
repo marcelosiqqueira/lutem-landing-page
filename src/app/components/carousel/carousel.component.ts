@@ -24,32 +24,32 @@ export class CarouselComponent implements OnInit {
 
   cards: Card[] = [
     {
-      image: 'assets/carousel_images/foto-1-lutem.jpeg',
+      image: 'assets/carousel_images/foto-2-lutem.jpeg',
       name: '1',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
     },
     {
-      image: 'assets/carousel_images/foto-2-lutem.jpeg',
+      image: 'assets/carousel_images/foto-3-lutem.jpeg',
       name: '2',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elitt.'
     },
     {
-      image: 'assets/carousel_images/foto-3-lutem.jpeg',
+      image: 'assets/carousel_images/foto-geral.jpeg',
       name: '3',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elittt.'
     },
     {
-      image: 'assets/carousel_images/foto-1-lutem.jpeg',
+      image: 'assets/carousel_images/imagem-lutem-campeonato-1.jpeg',
       name: '4',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
     },
     {
-      image: 'assets/carousel_images/foto-2-lutem.jpeg',
+      image: 'assets/carousel_images/premios-tremendao.jpeg',
       name: '5',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elitt.'
     },
     {
-      image: 'assets/carousel_images/foto-3-lutem.jpeg',
+      image: 'assets/carousel_images/rating-c.jpeg',
       name: '6',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elittt.'
     }

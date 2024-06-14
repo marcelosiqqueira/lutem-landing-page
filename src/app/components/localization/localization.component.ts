@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class LocalizationComponent {
 
+  width: number = 300;
+  height: number = 250;
+
 }
