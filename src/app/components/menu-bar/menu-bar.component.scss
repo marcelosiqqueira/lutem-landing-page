@@ -1,4 +1,4 @@
-.container-menu-bar {
+#container-menu-bar {
 
     display: flex;
     width: 100%;
@@ -46,7 +46,7 @@
 }
   
 @media screen and (max-width: 768px) {
-  .container-menu-bar {
+  #container-menu-bar {
     width: 100%;
     
     display: flex;
