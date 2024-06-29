@@ -1,0 +1,41 @@
+<div class="overlay_container" *ngIf="isMenuOpen">
+
+    <div class="title">
+        <h2>LIGA UBERABENSE DE TÊNIS DE MESA</h2>
+
+        <img src="../../../assets/menu_overlay.svg" alt="" class="header-menu" (click)="toggleMenu()">
+
+    </div>
+
+    <ul class="menu">
+        <li (click)="scrollToSection('container-menu-bar')">Início</li>
+        <li (click)="scrollToSection('imagens')">Imagens</li>
+        <li (click)="scrollToSection('location-container')">Localização</li>
+    </ul>
+
+
+    <a class="botao-contato"
+       href="https://wa.me//5534999717775?text=Ol%C3%A1%2C%20gostaria%20de%20mais%20detalhes%20para%20fazer%20uma%20aula%20experimental!"
+       target="_blank"
+    >
+        <span>ENTRE EM CONTATO</span>
+    </a>
+
+
+    <a 
+        href="https://www.instagram.com/lutem.ura/" 
+        target="_blank"
+        class="lutem_link"
+    >
+        <img src="../../../assets/logo-lutem.png">
+
+    </a>
+
+
+
+
+    <span class="footer">Desenvolvido por <a href="https://www.linkedin.com/in/marcelo-siqueira-filho-625403262/" target="_blank">Marcelo Siqueira</a></span>
+
+
+    
+</div>

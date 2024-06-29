@@ -2,7 +2,7 @@
 
     <img src="../../../assets/logo-lutem.png" class="header-logo">
 
-    <img src="../../../assets/menu.svg" alt="" class="header-menu">
+    <img src="../../../assets/menu.svg" alt="" class="header-menu" (click)="toggleMenu()">
 
     <ul>
         <li>
@@ -19,3 +19,6 @@
         </li>
     </ul>
 </div>
+
+
+<app-menu-overlay [isMenuOpen]="isMenuOpen"></app-menu-overlay>

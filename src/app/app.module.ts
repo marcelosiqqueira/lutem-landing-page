@@ -13,6 +13,7 @@ import { CarouselTitleComponent } from './components/carousel/carousel-title/car
 import { LocalizationComponent } from './components/localization/localization.component';
 import { LocalizationTitleComponent } from './components/localization/localization-title/localization-title.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { MenuOverlayComponent } from './components/menu-bar/menu-overlay/menu-overlay.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FooterComponent } from './components/footer/footer.component';
     CarouselTitleComponent,
     LocalizationComponent,
     LocalizationTitleComponent,
-    FooterComponent
+    FooterComponent,
+    MenuOverlayComponent
   ],
   imports: [
     BrowserModule,
