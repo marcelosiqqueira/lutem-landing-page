@@ -11,4 +11,10 @@ export class MenuBarComponent {
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
   }
+
+  handleMenuClosed(event: boolean) {
+    if (event)
+      this.isMenuOpen = false;
+
+  }
 }

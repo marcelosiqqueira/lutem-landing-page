@@ -21,4 +21,4 @@
 </div>
 
 
-<app-menu-overlay [isMenuOpen]="isMenuOpen"></app-menu-overlay>
+<app-menu-overlay [isMenuOpen]="isMenuOpen" (isMenuClosed)="handleMenuClosed($event)"></app-menu-overlay>
