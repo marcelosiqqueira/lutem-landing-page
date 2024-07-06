@@ -22,8 +22,8 @@ export class CarouselComponent implements OnInit {
   cards: Card[] = [
     {
       image: 'assets/carousel_images/foto-2-lutem.jpeg',
-      name: 'Venha Participar!',
-      description: 'Diversão garantida na Rua Tristão de Castro, 102. Venha jogar!'
+      name: 'Bora Participar!',
+      description: 'Diversão garantida na Rua Tristão de Castro, 102'
     },
     {
       image: 'assets/carousel_images/foto-3-lutem.jpeg',

@@ -52,6 +52,39 @@
     }
 }
 
+@media screen and (max-width: 1440px) and (max-height: 768px) {
+    #container-initial-card {
+        gap: 70px;
+        
+        .small-card {
+            margin-left: 250px;  
+            }
+    
+        .big-text {
+    
+           p {
+            font-size: 70px;
+           }
+        }
+    
+        a {
+            width: 200px;
+            height: 70px;
+            border-radius: 10px;
+            gap: 4px;
+            font-size: 27px;
+    
+            img {
+                width: 30px;
+            }
+        }
+    
+        .initial-image{
+            width: 550px;
+        }
+    }
+}
+
 
 @media screen and (max-width: 768px) {
 

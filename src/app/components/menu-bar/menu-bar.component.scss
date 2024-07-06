@@ -1,5 +1,4 @@
 #container-menu-bar {
-
     display: flex;
     width: 100%;
     justify-content: flex-start;
@@ -46,6 +45,23 @@
         }
       }
     }
+}
+
+@media screen and (max-width: 1440px) and (max-height: 768px) {
+  #container-menu-bar {
+
+    .header-logo {
+      width: 170px;
+    }
+
+    ul {
+      li {
+        a{
+          font-size: 32px;
+        }
+      }
+    }
+  }
 }
   
 @media screen and (max-width: 768px) {
