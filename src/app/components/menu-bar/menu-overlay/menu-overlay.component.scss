@@ -94,7 +94,21 @@
       text-decoration: underline;
       font-weight: 300;
     }
-  
 }
   
   
+@media screen and (max-height: 670px) {
+
+  .overlay_container {
+
+    .lutem_link {
+      margin-top: 15px;
+      margin-bottom: 44px;
+
+      img {
+        width: 175px;
+      }
+    }
+  }
+  
+}
